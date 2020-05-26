@@ -1,67 +1,55 @@
 * {
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
   font-weight: bold;
 }
 
-h1 {
-  text-align: center;
-}
-
-div.container {
-  border: 2px solid black;
+div.box {
+  background-color: lightgray;
   position: relative;
-  border-color: black;
-  background-color: grey;
+  border: 2px solid black;
   height: auto;
-  width: 95%;
-  margin: auto;
+  width: 93%;
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
 }
 
+p {
+  position: relative;
+  top: 10px;
+  padding: 10px;
+}
+
 span {
-  border-left: 2px solid black;
-  border-bottom: 2px solid black;
   position: absolute;
   right: 0%;
   top: 0%;
   font-size: 20px;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 1.4em;
-  height: 30px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 150px;
 }
 
 section.chicken span {
   background-color: pink;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center;
-  width: 30%;
 }
 
 section.beef span {
-  background-color: #ff3031;
+  background-color: red;
   color: white;
-  width: 30%;
 }
 
 section.sushi span {
-  background-color: #fbd28b;
-  position: absolute;
-  width: 30%;
-}
-
-p.para {
-  text-align: center;
-  padding: 10px;
-  font-size: 16px;
-  margin-top: 30px;
+  background-color: palegoldenrod;
 }
 
 /* Media Queries */
+
 /* desktop */
+
 @media (min-width: 992px) {
   .col-lg-3 {
     width: 33.33%;
@@ -70,23 +58,23 @@ p.para {
 }
 
 /* tab */
+
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-2,
-  .col-md-1 {
-    float: left;
-  }
   .col-md-2 {
     width: 50%;
+    float: left;
   }
   .col-md-1 {
+    float: left;
     position: relative;
-    right: 2.7%;
-    width: 105.4%;
+    right: 1.9%;
+    width: 103.75%;
     margin-top: 30px;
   }
 }
 
-/* phone */
+/* mobile */
+
 @media (max-width: 767px) {
   .col-sm-1 {
     float: left;
