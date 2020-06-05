@@ -1,0 +1,32 @@
+* {
+  font-size: large;
+  font-family: "Source Sans Pro", sans-serif;
+  box-sizing: border-box;
+}
+
+#thatMenu {
+  color: black;
+  font-size: xx-large;
+}
+h2 {
+  text-align: center;
+}
+
+hr {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 98%;
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+a {
+  font-size: x-large;
+}
+a:hover {
+  color: #ff9b29;
+}
+
+li a {
+  color: black;
+  text-align: center;
+}
